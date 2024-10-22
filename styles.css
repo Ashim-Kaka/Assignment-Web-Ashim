@@ -1,0 +1,327 @@
+
+
+/* General Styles from your previous code are retained */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; 
+    max-width: 400px; 
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background-color: #00695c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #004d40;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-content {
+        margin-top: 30%;
+    }
+}
+
+
+
+
+
+
+
+/* Header */
+header {
+    background-color: #00695c;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 98%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #B7C9C1;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn {
+    background-color: #B7C9C1;
+    color: #325343;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #BAB9B9;
+}
+
+/* Mobile Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('pictures/Hero1.jpg');
+    background-size: cover;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-text .cta-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+/* About Us */
+.about {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.therapist {
+    text-align: center;
+}
+
+.therapist img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.therapist img:hover {
+    transform: scale(1.1);
+}
+
+.therapist h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.therapist p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Services */
+.services {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    background-color: #8CBAB3;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact */
+.contact {
+    padding: 20px;
+    background-color: #627A77;
+    color: white;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 15px;
+}
+
+.contact ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact ul li button {
+    background-color: #B7C9C1;
+    color: #325343;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact ul li button:hover {
+    background-color: #BAB9B9;
+}
+
+/* Footer */
+footer {
+    background-color: #325343;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+

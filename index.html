@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We4U - Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>We4U</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#counseling">Counseling</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="signup-link" class="cta-btn">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Empowering Mental Health Support</h2>
+            <p>Providing the tools and support to promote your mental wellness.</p>
+            <a href="#services" class="cta-btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We4U aims to bridge the gap between mental health awareness and professional counseling, offering a supportive community to individuals in need, particularly in Nepal.</p>
+        <div class="team">
+            <div class="therapist">
+                <img src="pictures\d1.jpg" alt="Therapist 1">
+                <h3>Ashim Gurung</h3>
+                <p>Specialized in Anxiety and Depression Management</p>
+            </div>
+            <div class="therapist">
+                <img src="pictures/d2.jpg" alt="Therapist 2">
+                <h3>Asmit Gurung</h3>
+                <p>Specialized in Trauma Therapy</p>
+            </div>
+            <div class="therapist">
+                <img src="pictures/d3.jpg" alt="Therapist 3">
+                <h3>Abikshya Gurung</h3>
+                <p>Expert in Cognitive Behavioral Therapy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Individual Therapy</h3>
+            <p>One-on-one therapy sessions to address personal mental health challenges.</p>
+        </div>
+        <div class="service">
+            <h3>Group Therapy</h3>
+            <p>Support groups where you can share and learn from others' experiences.</p>
+        </div>
+        <div class="service">
+            <h3>Telehealth Options</h3>
+            <p>Get access to therapy from the comfort of your home via virtual consultations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We’re here to help. Get in touch with us via the methods below:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@we4u.com">info@we4u.com</a></li>
+            <li>Phone: <a href="tel:+977123456789">+977 123-456-789</a></li>
+            <li>Live Chat: <button id="chat-btn" aria-label="Start Live Chat">Start Chat</button></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 We4U. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
